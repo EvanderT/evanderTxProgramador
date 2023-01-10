@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evander Teixeira</title>
-
+<link rel="icon" href="/img/logo.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     
         <!--GOOGLE FONTS -MONTSERRAT-->
@@ -34,8 +34,10 @@
             
         </div>
         <ul class="nav__menu">
-            <li><a href="courses.html">Mudar Linguagem</a></li>
-            <li><a href="contact.html">Linkedin</a></li>
+            <li class="language-toggler">
+                <a class="language-toggle active" href="#"><img src="/img/angola.png"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/evander-teixeira-148795196/" target="_blank"><img class="social-icon" src="img/linkedin.png"/></a></li>
         </ul>
         <button id="open-menu-btn"><i class="fas fa-bars"></i></button>
         <button id="close-menu-btn"><i class="fas fa-times"></i></button>
@@ -63,8 +65,56 @@
 </header>
 
 <!--============ END HEADER  =========-->
-<!-- <img class="wave-bg" src="/img/wave.svg" alt=""> -->
 </section>
+
+<section class="categories">
+    <div class="container categories__container">
+        <div class="categories__left">
+            <h1>Habilidades</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, molestiae similique, pariatur ab, dignissimos itaque perspiciatis magnam ea odio dolor beatae aut amet tenetur omnis doloremque illum vitae porro cupiditate.</p>
+            <a href="" class="btn">Learn More</a>
+        </div>
+
+        <div class="categories__right">
+            <article class="category">
+                <span class="category__icon fab fa-bitcoin"></span>
+                <h5>Blockchain</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quidem.</p>
+            </article>
+
+            <article class="category">
+                <span class="category__icon fas fa-palette"></span>
+                <h5>Graphic Design</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quidem.</p>
+            </article>
+            
+            <article class="category">
+                <span class="category__icon fas fa-coins"></span>
+                <h5>Finance</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quidem.</p>
+            </article>
+            
+            <article class="category">
+                <span class="category__icon fas fa-bullhorn"></span>
+                <h5>Marketing</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quidem.</p>
+            </article>
+
+            <article class="category">
+                <span class="category__icon fas fa-music"></span>
+                <h5>Music</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quidem.</p>
+            </article>
+
+            <article class="category">
+                <span class="category__icon fas fa-puzzle-piece"></span>
+                <h5>Business</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quidem.</p>
+            </article>
+        </div>
+    </div>
+</section>
+<!--============ END CATEGORIES =========-->
     
 <script src="./js/main.js"></script>
 </body>
