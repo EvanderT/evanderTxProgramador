@@ -54,7 +54,7 @@
         <br>
         <h4 class="mt-2 text-secondary">Desenvolvedor Web</h4>
         <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt laboriosam vero, ipsam quos fugit officiis quas ratione voluptatibus iste.</p>
-        <a href="courses.html" class="btn btn-primary">Sobre mim</a>
+        <a href="#" class="btn btn-secondary">Sobre mim</a>
     </div>
     <div class="header__right">
         <div class="header__right-img">
@@ -72,16 +72,71 @@
         <div class="categories__left">
             <h1>Habilidades</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, molestiae similique, pariatur ab, dignissimos itaque perspiciatis magnam ea odio dolor beatae aut amet tenetur omnis doloremque illum vitae porro cupiditate.</p>
-            <a href="" class="btn">Interessado? Entre em contacto</a>
+            <p>Interessado? </p>
+            <a href="" class="btn btn-secondary">Entre em contacto</a>
         </div>
 
-        <div class="categories__right">
-           
+        <div class="categories__right mySwiper">
+            <h3 style="text-align:center;">Programação</h3>
+            <div class="skills swiper-wrapper">
+                <article class="category swiper-slide">
+                            <h5 style="text-align:center;">HTML</h5>
+                </article>
+                <article class="category swiper-slide">
+                    <h5 style="text-align:center;">CSS</h5>
+                </article>
+                <article class="category swiper-slide">
+                    <h5 style="text-align:center;">Javascript</h5>
+                </article>
+                <article class="category swiper-slide">
+                    <h5 style="text-align:center;">C#</h5>
+                </article>
+                <article class="category swiper-slide">
+                    <h5 style="text-align:center;">ASP.Net MVC</h5>
+                </article>
+            </div>
+            <br/>
+            <br/>
+            <h3 style="text-align:center;">Design Gráfico</h3>
+                <div class="skills">
+                    <article class="category">
+                                <h5 style="text-align:center;">Photoshop</h5>
+                    </article>
+                    <article class="category">
+                
+                        <h5 style="text-align:center;">Illustrator</h5>
+                </article>
+                <article class="category">
+                    <h5 style="text-align:center;">Adobe XD</h5>
+                </article>
+                </div>
         </div>
     </div>
 </section>
 <!--============ END CATEGORIES =========-->
     
+
+<!--=========== SWIPER JS ========-->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
+
+   <!-- Initialize SwipeR-->
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      //When window width  is >=600
+      breakpoints:{
+          600:{
+              slidesPerView:2
+          }
+      }
+    });
+  </script>
 </body>
 </html>

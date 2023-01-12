@@ -101,7 +101,6 @@
     background: var(--color-white);
     color: var(--color-black);
     padding: 1rem 2rem;
-    border: 1px solid transparent;
     border-radius: 12px;
     font-weight: 500;
     transition: var(--transition);
@@ -110,18 +109,29 @@
   .btn:hover {
     background: transparent;
     color: var(--color-white);
-    border-color: var(--color-white);
   }
   
   .btn-primary {
-    background: var(--color-secondary);
+    background: var(--color-primary);
     color: var(--color-white);
   }
 
+  .btn-primary:hover{
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .btn-secondary{
+    background: var(--color-secondary);
+    color: var(--color-white);
+  }
+  .btn-secondary:hover{
+    border:none;
+    background-color: #0277c8;
+  }
   .bg-secondary{
     background-color: var(--color-secondary);
   }
-  
   .bg-dark{
     background-color: var(--color-bg);
   }
@@ -248,7 +258,7 @@
   /*============= CATEGORIES =============*/
   .categories {
     background: var(--color-white);
-    height: 32rem;
+    height: 36rem;
     color:var(--color-secondary);
   }
   
@@ -270,20 +280,31 @@
   }
   
   .categories__right {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 1.2rem;
+    overflow: hidden;
+    padding: 2rem;
+  }
+
+  .skills{
+    display: flex;
+justify-content:space-around ;
+
   }
   
   .category {
-    background: var(--color-bg2);
-    padding: 2rem;
+    background: var(--color-white);
+    padding: 1rem;
     border-radius: 2rem;
     transition: var(--transition);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    width: 10rem;
+    height: 6rem;
   }
   
   .category:hover {
-    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.7);
     z-index: 1;
   }
   
