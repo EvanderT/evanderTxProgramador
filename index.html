@@ -16,6 +16,12 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/zigzag.css">
 </head>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+<link rel="sylesheet"  href="/css/swiper.css"/>
+
 <body>
 
 <section class="wave-bg">
@@ -52,9 +58,11 @@
     <div class="header__left">
         <h1>EVANDER I. DIAS TEIXEIRA</h2>
         <br>
-        <h4 class="mt-2 text-secondary">Desenvolvedor Web</h4>
-        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt laboriosam vero, ipsam quos fugit officiis quas ratione voluptatibus iste.</p>
-        <a href="#" class="btn btn-secondary">Sobre mim</a>
+        <h4 class="mt-2 text-secondary">Desenvolvedor Web & Designer Gráfico</h4>
+        <p class="text-secondary">
+            Sou um jovem desenvolvedor, curioso e aberto a novos desafios, buscando sempre expandir cada vez mais os meus conhecimentos e experiências relacionadas a minha área de formação,
+            procurando sempre apresentar os melhores resultados possíveis.</p>
+        <a href="#" class="btn btn-secondary">Conheça minhas habilidades</a>
     </div>
     <div class="header__right">
         <div class="header__right-img">
@@ -76,25 +84,30 @@
             <a href="" class="btn btn-secondary">Entre em contacto</a>
         </div>
 
-        <div class="categories__right mySwiper">
-            <h3 style="text-align:center;">Programação</h3>
-            <div class="skills swiper-wrapper">
-                <article class="category swiper-slide">
-                            <h5 style="text-align:center;">HTML</h5>
-                </article>
-                <article class="category swiper-slide">
-                    <h5 style="text-align:center;">CSS</h5>
-                </article>
-                <article class="category swiper-slide">
-                    <h5 style="text-align:center;">Javascript</h5>
-                </article>
-                <article class="category swiper-slide">
-                    <h5 style="text-align:center;">C#</h5>
-                </article>
-                <article class="category swiper-slide">
-                    <h5 style="text-align:center;">ASP.Net MVC</h5>
-                </article>
+
+        <div class="categories__right">
+            <div class="skills">
+                <h3 class="skills-title" style="text-align:center;">Programação</h3>    
+                <!-- Swiper -->
+                <div class="swiper mySwiper2 skill-list">
+                   <div class="swiper-wrapper" style="color:#000;">
+                     <div class="swiper-slide category">Slide 1</div>
+                     <div class="swiper-slide category">Slide 2</div>
+                     <div class="swiper-slide category">Slide 3</div>
+                     <div class="swiper-slide category">Slide 4</div>
+                     <div class="swiper-slide category">Slide 5</div>
+                     <div class="swiper-slide category">Slide 6</div>
+                     <div class="swiper-slide category">Slide 7</div>
+                     <div class="swiper-slide category">Slide 8</div>
+                   </div>
+                   <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-pagination"></div>
+                 </div>
             </div>
+            
+
+  <!-- Swiper JS -->
             <br/>
             <br/>
             <h3 style="text-align:center;">Design Gráfico</h3>
@@ -113,11 +126,11 @@
         </div>
     </div>
 </section>
+
 <!--============ END CATEGORIES =========-->
-    
 
 <!--=========== SWIPER JS ========-->
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
 
    <!-- Initialize SwipeR-->
@@ -137,6 +150,25 @@
           }
       }
     });
+
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+
   </script>
 </body>
 </html>

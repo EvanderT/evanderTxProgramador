@@ -241,6 +241,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
   }
   .header__right-img img{
     height: 300px;
@@ -289,7 +290,18 @@
 
   .skills{
     display: flex;
-justify-content:space-around ;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .skills-title{
+    margin-bottom: 15px;
+  }
+
+  .skill-list{
+    display: flex;
+    justify-content: space-around;
+    margin:10px;
 
   }
   
