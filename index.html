@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evander Teixeira</title>
-<link rel="icon" href="/img/logo.png">
+<link rel="icon" href="./img/logo.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     
         <!--GOOGLE FONTS -MONTSERRAT-->
@@ -20,8 +20,6 @@
 rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 />
-<link rel="sylesheet"  href="/css/swiper.css"/>
-
 <body>
 
 <section class="wave-bg">
@@ -30,7 +28,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
  <nav>
     <div class="container nav__container">
         <div class="nav_navigation">
-            <a href="index.html"> <img src="img/logo.png" alt=""></a>
+            <a href="index.html"> <img src="./img/logo.png" alt=""></a>
             <ul class="nav__menu">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="about.html">Habilidades</a></li>
@@ -43,7 +41,9 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
             <li class="language-toggler">
                 <a class="language-toggle active" href="#"><img src="./img/angola.png"></a>
             </li>
-            <li><a href="https://www.linkedin.com/in/evander-teixeira-148795196/" target="_blank"><img class="social-icon" src="img/linkedin.png"/></a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/evander-teixeira-148795196/" target="_blank"><img class="social-icon" src="./img/linkedin.png"/></a>
+            </li>
         </ul>
         <button id="open-menu-btn"><i class="fas fa-bars"></i></button>
         <button id="close-menu-btn"><i class="fas fa-times"></i></button>
@@ -89,41 +89,52 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
             <div class="skills">
                 <h3 class="skills-title" style="text-align:center;">Programação</h3>    
                 <!-- Swiper -->
-                <div class="swiper mySwiper2 skill-list">
-                   <div class="swiper-wrapper" style="color:#000;">
-                     <div class="swiper-slide category">Slide 1</div>
-                     <div class="swiper-slide category">Slide 2</div>
-                     <div class="swiper-slide category">Slide 3</div>
-                     <div class="swiper-slide category">Slide 4</div>
-                     <div class="swiper-slide category">Slide 5</div>
-                     <div class="swiper-slide category">Slide 6</div>
-                     <div class="swiper-slide category">Slide 7</div>
-                     <div class="swiper-slide category">Slide 8</div>
-                   </div>
-                   <div class="swiper-button-next"></div>
-                   <div class="swiper-button-prev"></div>
-                   <div class="swiper-pagination"></div>
-                 </div>
-            </div>
-            
+                <div class="skill-list">
+                     <div class="skill">
+                        <img class="skill_icon" src="/img/html-5.png"/>
+                        <h5>HTML</h5>
+                     </div>
+                     <div class="skill">
+                        <img class="skill_icon" src="/img/css-3.png"/>
+                        <h5>CSS</h5>
+                     </div>
+                     <div class="skill">
+                        <img class="skill_icon" src="/img/js.png"/>
+                        <h5>Javascript</h5>
+                     </div>
 
-  <!-- Swiper JS -->
-            <br/>
-            <br/>
+                     <div class="skill">
+                        <img class="skill_icon" src="/img/c-sharp.png"/>
+                        <h5>C#</h5>
+                     </div>
+
+                     <div class="skill">
+                        <img class="skill_icon" src="/img/c-sharp.png"/>
+                        <h5>Asp.Net MVC</h5>
+                     </div>
+                     <div class="skill">
+                        <img class="skill_icon" src="/img/sql-server.png"/>
+                        <h5>MS SQL</h5>
+                     </div>
+            </div>
+        
 
             <div class="skills">
                 <h3 class="skills-title" style="text-align:center;">Design Gráfico</h3>
                 <div class="skill-list">
-                    <article class="category">
+                    <div class="skill">
+                        <img class="skill_icon" src="/img/photoshop (2).png"/>
                                 <h5 style="text-align:center;">Photoshop</h5>
-                    </article>
-                    <article class="category">
-                
+                    </div>
+                    <div class="skill">
+                        <img class="skill_icon" src="/img/illustrator.png"/>
                         <h5 style="text-align:center;">Illustrator</h5>
-                </article>
-                <article class="category">
+                    </div>
+                <div class="skill">
+                    <img class="skill_icon" src="/img/xd.png"/>
+
                     <h5 style="text-align:center;">Adobe XD</h5>
-                </article>
+                </div>
                 </div>
             </div>
             
@@ -133,46 +144,6 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 
 <!--============ END CATEGORIES =========-->
 
-<!--=========== SWIPER JS ========-->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
-
-   <!-- Initialize SwipeR-->
-   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-
-      //When window width  is >=600
-      breakpoints:{
-          600:{
-              slidesPerView:2
-          }
-      }
-    });
-
-    var swiper = new Swiper(".mySwiper2", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-
-
-  </script>
 </body>
 </html>
