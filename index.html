@@ -31,7 +31,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
             <a href="index.html"> <img src="./img/logo.png" alt=""></a>
             <ul class="nav__menu">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="about.html">Habilidades</a></li>
+                <li><a href="courses.html">Habilidades</a></li>
                 <li><a href="courses.html">Projectos</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
@@ -54,7 +54,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 <!--============ HEADER  =========-->
 
 <header>
-<div class="container header__container">
+<div class="container header__container" id="home_section">
     <div class="header__left">
         <h1>EVANDER I. DIAS TEIXEIRA</h2>
         <br>
@@ -62,7 +62,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
         <p class="text-secondary">
             Sou um jovem desenvolvedor, curioso e aberto a novos desafios, buscando sempre expandir cada vez mais os meus conhecimentos e experiências relacionadas a minha área de formação,
             procurando sempre apresentar os melhores resultados possíveis.</p>
-        <a href="#" class="btn btn-secondary">Conheça minhas habilidades</a>
+        <a class="btn btn-secondary" href="#" >Minhas habilidades</a>
     </div>
     <div class="header__right">
         <div class="header__right-img">
@@ -75,11 +75,11 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 <!--============ END HEADER  =========-->
 </section>
 
-<section class="categories">
+<section class="categories" id="skills_section">
     <div class="container categories__container">
         <div class="categories__left">
             <h1>Habilidades</h1>
-            <p>Olá, eu sou o Evander, programador e designer gráfico com habilidades diversas na criação de sites e aplicativos. Possuo conhecimentos sólidos em HTML, CSS, JavaScript, C#, ASP.NET MVC e SQL Server para a construção de soluções robustas e escaláveis. Além disso, possuo habilidades avançadas em Adobe Photoshop, Illustrator e XD, permitindo-me criar designs elegantes e impactantes para a web e impressos. Estou sempre em busca de desafios e oportunidades para aprimorar minhas habilidades e contribuir para o sucesso de projetos...</p>
+            <p>Olá, eu sou o Evander, programador e designer gráfico com habilidades diversas na criação de sites e aplicativos.Além disso, possuo habilidades avançadas em Adobe Photoshop, Illustrator e XD, permitindo-me criar designs elegantes e impactantes para a web e impressos. Estou sempre em busca de desafios e oportunidades para aprimorar minhas habilidades e contribuir para o sucesso de projetos...</p>
             <p>Interessado? </p>
             <a href="" class="btn btn-secondary">Entre em contacto</a>
         </div>
@@ -143,6 +143,59 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 </section>
 
 <!--============ END CATEGORIES =========-->
+
+
+<!--============ PROJECTS  =========-->
+
+<section class="projects_section">
+    <div class="container">
+        <h1>Projectos</h1>
+
+        <div class="projects">
+            <div class="project">
+                <div class="project_left">
+                    <h3>ICSG - Sistema de Gestão Empresarial</h3>
+                    <p>O ICSG é um sistema complexo de gestão empresarial, contendo funcionalidades como: Gestão de Recursos Humanos, Gestão Documental e Gestão de Actividades empresariais. O projecto foi desenvolvido para o grupo IC (Isabelinha Comercial), com o objectivo de dinamizar os seus processos internos.</p>
+                </div>
+                <div class="project_right">
+                    <img src="./img/projects/icsg/icsg1.PNG" class="project_img"/>
+                </div>
+    
+            </div>
+            
+        </div>
+
+        
+    </div>
+
+ 
+
+</section>
+<!--============ END PROJECTS =========-->
+
+<!--============ PROJECTS  =========-->
+<section class="contact_section">
+    <div class="contact_container">
+        <div class="contact_left">
+            <h1>Entre em contacto</h1>
+            <p>Deixe a sua mensagem por email ou entre em contacto através das redes sociais</p>
+            <div class="contact_social">
+                <a href="#"><img src="./img/facebook (4).png" /></a>
+                <a href="#"><img src="./img/linkedin.png" /></a>
+            </div>
+        </div>
+        <div class="contact_right">
+            <h1>Deixe uma mensagem</h1>
+            <form class="contact_form">
+                <input type="text" name="Nome" placeholder="Seu nome..." />
+                <input type="email" name="Email" placeholder="Seu email..." />
+                <textarea placeholder="Sua mensagem..." rows="5"></textarea>
+                <button type="submit" class="btn btn-secondary">Enviar mensagem</button>
+            </form>
+        </div>
+    </div>
+</section>
+
 
 <script src="./js/main.js"></script>
 </body>

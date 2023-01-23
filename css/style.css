@@ -261,6 +261,7 @@
     background: var(--color-white);
     height: 42rem;
     color:var(--color-secondary);
+    margin-top: -5px;
   }
   
   .categories h1 {
@@ -351,138 +352,96 @@
     font-size: 0.85rem;
   }
   
-  /*============= POPULAR COURSES =============*/
-  .courses {
-    margin-top: 10rem;
-  }
+   /*============= PROJECTS =============*/
+.projects_section{
+ height: 38rem;
+}
+
+    .projects{
+      margin: 4rem 0;
+      display: flex;
+      flex-direction: column;
+      gap:1rem ;
+
+    }
+
+    .project{
+      display: grid;
+      grid-template-columns: 40% 60%;
+      background: var(--color-white);
+      width: 100%;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .project h3{
+      color: var(--color-secondary);
+      margin-bottom: 1rem;
+    }
+    .project p{
+      color: var(--color-secondary);
+      width: 70%;
+      text-align: justify;
+    }
+  /*============= CONTACT =============*/
+  .contact_section{
+    height: 37rem;
+    }
   
-  .courses__container {
+  .contact_container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: 50% 50%;
   }
-  
-  .course {
-    background: var(--color-bg1);
+
+  .contact_section h1{
     text-align: center;
-    border: 1px solid transparent;
-    transition: var(--transition);
   }
-  
-  .course:hover {
-    background: transparent;
-    border-color: var(--color-primary);
-  }
-  
-  .course__image img {
-    height: 12rem;
-  }
-  .course__info {
-    padding: 2rem;
-  }
-  
-  .course__info p {
-    margin: 1.2rem 0 2rem;
-    font-size: 0.9rem;
-  }
-  
-  /*============= FAQs =============*/
-  .faqs {
-    background: var(--color-bg1);
-    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
-  }
-  
-  .faqs__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-  
-  .faq {
-    padding: 2rem;
+
+.contact_left{
+  padding:3rem 6rem;
+  height: 37rem;
+  background-color: var(--color-info);
+}
+
+.contact_left p{
+  margin-top: 1.5rem;
+}
+
+.contact_social{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.contact_social a{
+  width: 100px;
+  height: 100px;
+  background: var(--color-white);
+  border-radius: 100%;
+  padding: 20px;
+}
+
+.contact_right{
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+    padding:3rem 6rem;
+    height: 37rem;
+}
+
+.contact_form{
+    margin-top: 2rem;
     display: flex;
-    align-items: center;
-    gap: 1.4rem;
-    height: fit-content;
-    background: var(--color-primary);
-    cursor: pointer;
-  }
-  
-  .faq h4 {
-    font-size: 1rem;
-    line-height: 2.2;
-  }
-  
-  .faq__icon {
-    align-self: flex-start;
-    font-size: 1.2rem;
-  }
-  
-  .faq p {
-    margin-top: 0.8rem;
-    display: none;
-    transition: var(--transition);
-  }
-  
-  .faq.open p {
-    display: block;
-  }
-  
-  /*============= TESTIMONIALS =============*/
-  
-  .testimonials__container {
-    overflow-x: hidden;
-    position: relative;
-    margin-bottom: 5rem;
-  }
-  
-  .testimonial {
-    padding-top: 2rem;
-  }
-  
-  .avatar {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 1rem;
-    border: solid 1rem var(--color-bg1);
-  }
-  
-  .avatar img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .testimonial__info {
-    text-align: center;
-  }
-  
-  .testimonial__body {
-    background: var(--color-primary);
-    padding: 2rem;
-    margin-top: 3rem;
-    position: relative;
-  }
-  
-  .testimonial__body::before {
-    content: "";
-    display: block;
-    background: linear-gradient(
-      135deg,
-      transparent,
-      var(--color-primary),
-      var(--color-primary),
-      var(--color-primary)
-    );
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    left: 46%;
-    top: -1.5rem;
-    transform: rotate(45deg);
-  }
-  
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact_form input, textarea{
+    border: solid 4px var(--color-info);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
   /*============= FOOTER =============*/
   footer {
     background: var(--color-bg1);
@@ -742,4 +701,6 @@
       justify-content: center;
     }
   }
+  
+
   
