@@ -431,6 +431,7 @@
 
 .contact_left p{
   margin-top: 1.5rem;
+  position: relative;
 }
 
 .contact_social{
@@ -449,6 +450,12 @@
   padding: 20px;
 }
 
+.email{
+  margin-top: 4rem;
+  text-align: center;
+  align-self:center;
+  font-weight: bold;
+}
 .contact_right{
     background-color: var(--color-white);
     color: var(--color-secondary);
